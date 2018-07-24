@@ -1,1 +1,10 @@
 # LDA
+1- Define the number of topics
+2- Go through each document and assign topics randomly to the word in each document
+To improve this:
+1- Probability (topic|document) = proportion of words in document d that were assigned to topic t
+2- probability (word | topic) = proportion of assignments to topic t over all documents that are related to word w.
+
+Reassign word w a new topic t’, where we choose topic t’ with probability
+ p(topic t’ | document d) * p(word w | topic t’)
+This generative model predicts the probability that topic t’ generated word w
